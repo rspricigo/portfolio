@@ -1,4 +1,5 @@
-import Header from "./componets/Header";
+import Link from "next/link";
+import Header from "./components/Header";
 
 export default function Home() {
   return (
@@ -14,12 +15,15 @@ export default function Home() {
           </p>
 
           <div className="flex flex-wrap items-center text-center justify-around max-w-4xl mt-6 sm:w-full">
-            <div className="p-6 mt-6 text-left border rounded-2xl hover:border-white hover:text-blue-600 focus:text-blue-600">
+            <Link
+              href="/portfolio"
+              className="p-6 mt-6 text-left border rounded-2xl hover:border-white hover:text-blue-600 focus:text-blue-600"
+            >
               <h2 className="text-2xl font-semibold">Ver Portfólio</h2>
               <p className="mt-4 text-xl">
                 Explore os projetos e trabalhos realizados.
               </p>
-            </div>
+            </Link>
 
             <div className="p-6 mt-6 text-left border rounded-2xl hover:border-white hover:text-blue-600 focus:text-blue-600">
               <h2 className="text-2xl font-semibold">Area Administrativa</h2>
