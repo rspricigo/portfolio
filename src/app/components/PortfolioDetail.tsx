@@ -12,7 +12,7 @@ interface Item {
   id: string;
   title: string;
   description: string;
-  imageSrc: string;
+  imgUrl: string;
   techs: string[];
   githubUrl?: string;
   demoUrl?: string;
@@ -22,7 +22,7 @@ const item: Item = {
   id: "1",
   title: "Projeto 1",
   description: "Descrição do projeto 1",
-  imageSrc: "/placeholder.svg",
+  imgUrl: "/placeholder.svg",
   techs: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
   githubUrl: "https://github.com/rspricigo",
   demoUrl: "https://github.com/rspricigo",
@@ -40,7 +40,7 @@ export default function PortfolioDetail({ id }: PortfolioDetailParams) {
       <div className="grid md:grid-cols-2 gap-8">
         <div className="relative h-[300px] md:h-[400px]">
           <Image
-            src={item.imageSrc}
+            src={item.imgUrl}
             alt={item.title}
             fill
             className="rounded-lg"

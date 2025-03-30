@@ -6,36 +6,36 @@ export default function PortfolioPage() {
       id: "1",
       title: "Projeto A",
       description: "Primeiro projeto",
-      imageSrc: "placeholder.svg",
-      techs: ["React", "Next.js", "Typescript"],
+      imgUrl: "placeholder.svg",
+      tags: ["React", "Next.js", "Typescript"],
     },
     {
       id: "2",
       title: "Projeto B",
       description: "Segundo projeto",
-      imageSrc: "placeholder.svg",
-      techs: ["React", "Next.js"],
+      imgUrl: "placeholder.svg",
+      tags: ["React", "Next.js"],
     },
     {
       id: "3",
       title: "Projeto C",
       description: "Terceiro projeto",
-      imageSrc: "placeholder.svg",
-      techs: ["React", "Next.js", "Typescript", "TailwindCSS"],
+      imgUrl: "placeholder.svg",
+      tags: ["React", "Next.js", "Typescript", "TailwindCSS"],
     },
     {
       id: "4",
       title: "Projeto D",
       description: "Quarto projeto",
-      imageSrc: "placeholder.svg",
-      techs: ["React", "Next.js", "Typescript", "TailwindCSS"],
+      imgUrl: "placeholder.svg",
+      tags: ["React", "Next.js", "Typescript", "TailwindCSS"],
     },
     {
       id: "5",
       title: "Projeto E",
       description: "Quinto projeto",
-      imageSrc: "placeholder.svg",
-      techs: ["React", "Next.js", "Typescript", "TailwindCSS"],
+      imgUrl: "placeholder.svg",
+      tags: ["React", "Next.js", "Typescript", "TailwindCSS"],
     },
   ];
 
@@ -49,8 +49,8 @@ export default function PortfolioPage() {
           <PortfolioCard
             key={portfolio.id}
             description={portfolio.description}
-            imageSrc={portfolio.imageSrc}
-            techs={portfolio.techs}
+            imgUrl={portfolio.imgUrl}
+            tags={portfolio.tags}
             id={portfolio.id}
             title={portfolio.title}
           />

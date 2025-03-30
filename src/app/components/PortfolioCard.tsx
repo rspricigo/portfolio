@@ -15,23 +15,23 @@ type PortfolioCardProps = {
   id: string;
   title: string;
   description: string;
-  imageSrc: string;
-  techs: string[];
+  imgUrl: string;
+  tags: string[];
 };
 
 export default function PortfolioCard({
   id,
   title,
   description,
-  imageSrc,
-  techs,
+  imgUrl,
+  tags,
 }: PortfolioCardProps) {
   return (
     <Card className="overflow-hidden">
       <div className="relative h-48">
         <Image
           alt="Imagem do card"
-          src={imageSrc}
+          src={imgUrl}
           layout="fill"
           objectFit="cover"
         />
@@ -43,8 +43,8 @@ export default function PortfolioCard({
 
       <CardContent>
         <div className="flex flex-wrap gap-2">
-          {techs.map((tech) => (
-            <Badge key={tech}>{tech}</Badge>
+          {tags.map((tag) => (
+            <Badge key={tag}>{tag}</Badge>
           ))}
         </div>
       </CardContent>
